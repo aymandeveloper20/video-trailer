@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(14,14,14);
+    position: relative;
+}
+article{
+    background:#181715;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    color: white;
+    direction: rtl;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+article picture {
+    width: 100%;
+    overflow: hidden;
+}
+article picture img{
+    width: 100%;
+    border-radius: 8px;
+}
+article button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #c1c1c1;
+    border: none;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+article button:hover{
+    background: #b1b1b1;
+}
+#display{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 82%;
+    z-index: 2;
+    border-radius: 8px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+#blur{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    display: none;
+}
+.hideBlur{
+    display: none;
+}
+.showBlur{
+    display: block !important;
+}

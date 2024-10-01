@@ -3,37 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Movie Trailer</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <article>
       <picture>
-        <img src="https://picsum.photos/id/237/500/250" alt="movieImage">
+        <img src="./bg.jpg" alt="movieImage">
       </picture>
 
       <h1> إية المشكلة في الأغاني و الموسيقي ؟</h1>
       <p>الفيديو حول بعض المشاكل الشائعة المرتبطة بالأغاني في العصر الحديث:
-
           الوصف العام للمشاكل في الأغاني:
+          <ul style="list-style-type: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 5px">1. المحتوى غير اللائق: كثير من الأغاني الحديثة تحتوي على كلمات أو مواضيع غير مناسبة، خاصة للأطفال والمراهقين.</li>
+            <li style="margin-bottom: 5px">2. التأثير الثقافي: قد تروج بعض الأغاني لقيم أو سلوكيات لا تتناسب مع الثقافات المحلية.</li>
+            <li style="margin-bottom: 5px">3. حقوق الملكية الفكرية: مشاكل متعلقة بانتهاك حقوق التأليف والنشر، خاصة مع سهولة مشاركة الموسيقى عبر الإنترنت.</li>
+            <li style="margin-bottom: 5px">4. جودة الإنتاج: مع توفر تقنيات الإنتاج الموسيقي، قد تكون هناك مشكلة في جودة الأغاني المنتجة.</li>
+            <li style="margin-bottom: 5px">5. التشابه والتكرار: كثير من الأغاني الحديثة تبدو متشابهة، مما يؤدي إلى نقص في التنوع والإبداع.</li>
+            <li style="margin-bottom: 5px">6. الاعتماد على التكنولوجيا: استخدام التصحيح الآلي للصوت (Auto-Tune) وغيره من التقنيات قد يؤثر على أصالة الصوت.</li>
+            <li style="margin-bottom: 5px">7. ضغوط صناعة الموسيقى: قد تؤثر الضغوط التجارية على المحتوى الفني للأغاني.</li>
+            <li style="margin-bottom: 5px">8. الاستهلاك السريع: سرعة إنتاج واستهلاك الأغاني قد تؤثر على جودتها وعمقها الفني.</li>
+          </ul>
 
-          1. المحتوى غير اللائق: كثير من الأغاني الحديثة تحتوي على كلمات أو مواضيع غير مناسبة، خاصة للأطفال والمراهقين.
-
-          2. التأثير الثقافي: قد تروج بعض الأغاني لقيم أو سلوكيات لا تتناسب مع الثقافات المحلية.
-
-          3. حقوق الملكية الفكرية: مشاكل متعلقة بانتهاك حقوق التأليف والنشر، خاصة مع سهولة مشاركة الموسيقى عبر الإنترنت.
-
-          4. جودة الإنتاج: مع توفر تقنيات الإنتاج الموسيقي، قد تكون هناك مشكلة في جودة الأغاني المنتجة.
-
-          5. التشابه والتكرار: كثير من الأغاني الحديثة تبدو متشابهة، مما يؤدي إلى نقص في التنوع والإبداع.
-
-          6. الاعتماد على التكنولوجيا: استخدام التصحيح الآلي للصوت (Auto-Tune) وغيره من التقنيات قد يؤثر على أصالة الصوت.
-
-          7. ضغوط صناعة الموسيقى: قد تؤثر الضغوط التجارية على المحتوى الفني للأغاني.
-
-          8. الاستهلاك السريع: سرعة إنتاج واستهلاك الأغاني قد تؤثر على جودتها وعمقها الفني.
-
-          هذه نظرة عامة على بعض المشاكل المحتملة في الأغاني. إذا كنت ترغب في مزيد من التفاصيل حول أي من هذه النقاط أو إذا كان الفيديو يركز على جانب معين من هذه المشاكل، فأخبرني وسأكون سعيدًا بتقديم المزيد من المعلومات.</p>
+        <button id="shower" >Show Video</button>
     </article>
+    <iframe id="display" class="hide" width="560" height="315" src="https://www.youtube.com/embed/G7PyaAorVHE?si=AvvQ2hKCMvTi8m0W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div id="blur" class="hideBlur"></div>
+    <script src="./script.js"></script>
 </body>
 </html>

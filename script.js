@@ -9,8 +9,9 @@ function display(){
         blur.classList.add("showBlur");
         blur.classList.remove("hideBlur");
         document.body.style.overflowY = "hidden";
+        showBtn.innerText = "Hide Video";
         isRunning = true;
-        console.log("HI");
+
     }
 }
 blur.addEventListener("click", ()=>{
@@ -19,6 +20,7 @@ blur.addEventListener("click", ()=>{
     blur.classList.add("hideBlur");
     blur.classList.remove("showBlur");
     document.body.style.overflowY = "auto";
+    showBtn.innerText = "Show Video";
     isRunning = false;
 })
 showBtn.addEventListener("click",display)
